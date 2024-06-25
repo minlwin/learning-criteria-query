@@ -1,6 +1,6 @@
 package com.jdc.onestop.criteria.entity;
 
-import com.jdc.onestop.criteria.embeddable.Role;
+import com.jdc.onestop.criteria.enums.Role;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,4 +1,4 @@
-package com.jdc.onestop.criteria.embeddable;
+package com.jdc.onestop.criteria.enums;
 
 public enum Role {
 

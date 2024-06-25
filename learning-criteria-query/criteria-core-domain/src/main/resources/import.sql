@@ -8,3 +8,15 @@ insert into department(code, name, phone, email, extra_phone) values ('GSG', 'Ge
 insert into department(code, name, phone, email, extra_phone) values ('ICU', 'Intensive Care Unit', '0911112229', 'icu@hospital.com', '0911112249');
 insert into department(code, name, phone, email, extra_phone) values ('MTE', 'Maternity', '0911112230', 'mte@hospital.com', '0911112250');
 insert into department(code, name, phone, email, extra_phone) values ('NUO', 'Neurology', '0911112231', 'nuo@hospital.com', '0911112251');
+
+insert into account(login_id, password, role, activated) values ('aung@hospital.com', 'aungaung', 0, true);
+insert into account(login_id, password, role, activated) values ('thidar@hospital.com', 'thidar', 0, true);
+insert into account(login_id, password, role, activated) values ('nilar@hospital.com', 'nilar', 0, true);
+
+insert into doctor (account_login_id, email, name, phone, gender, degree, id) values ('aung@hospital.com', 'aung@hospital.com', 'Aung Aung', '0933334444', 0, 'MBBS', 1);
+insert into doctor (account_login_id, email, name, phone, gender, degree, id) values ('thidar@hospital.com', 'thidar@hospital.com', 'Thidar', '0933335555', 1, 'MED', 2);
+insert into doctor (account_login_id, email, name, phone, gender, degree, id) values ('nilar@hospital.com', 'nilar@hospital.com', 'Nilar Aung', '0933336666', 1, 'PHD', 3);
+
+insert into doctor_department values (1, 'ICU');
+insert into doctor_department values (2, 'ICU');
+insert into doctor_department values (3, 'GSG');

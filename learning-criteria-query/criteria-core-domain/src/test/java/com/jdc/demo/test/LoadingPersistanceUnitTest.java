@@ -2,8 +2,8 @@ package com.jdc.demo.test;
 
 import org.junit.jupiter.api.Test;
 
-import com.jdc.onestop.criteria.embeddable.Role;
 import com.jdc.onestop.criteria.entity.Account;
+import com.jdc.onestop.criteria.enums.Role;
 
 import jakarta.persistence.Persistence;
 
