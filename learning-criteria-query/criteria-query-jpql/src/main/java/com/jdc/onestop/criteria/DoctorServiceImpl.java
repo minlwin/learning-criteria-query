@@ -56,7 +56,6 @@ public class DoctorServiceImpl extends AbstractService implements DoctorService 
 			}
 			
 			return query.getResultList();
-			
 		}
 	}
 
