@@ -41,6 +41,6 @@ public class Patient {
 	private LocalDate dob;
 	private String address;
 
-	@Column(nullable = false)
+	@Column(nullable = false, name = "regist_at")
 	private LocalDateTime registAt;
 }

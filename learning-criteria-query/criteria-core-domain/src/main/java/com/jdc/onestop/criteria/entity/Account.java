@@ -14,6 +14,7 @@ import lombok.Data;
 public class Account {
 
 	@Id
+	@Column(name = "login_id")
 	private String loginId;
 	
 	@Column(nullable = false)

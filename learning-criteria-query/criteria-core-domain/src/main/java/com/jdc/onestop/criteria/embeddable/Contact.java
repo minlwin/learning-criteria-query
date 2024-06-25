@@ -12,5 +12,7 @@ public class Contact {
 	private String phone;
 	@Column(nullable = false)
 	private String email;
+	
+	@Column(name = "extra_phone")
 	private String extraPhone;
 }
