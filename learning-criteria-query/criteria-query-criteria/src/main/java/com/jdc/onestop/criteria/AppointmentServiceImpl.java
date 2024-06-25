@@ -9,6 +9,7 @@ import com.jdc.onestop.criteria.input.AppointmentSearch;
 import com.jdc.onestop.criteria.output.AppointmentListItem;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 
 public class AppointmentServiceImpl extends AbstractService implements AppointmentService {
 
@@ -18,8 +19,25 @@ public class AppointmentServiceImpl extends AbstractService implements Appointme
 
 	@Override
 	public AppointmentDetailsInfo create(AppointmentEditForm form) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		EntityTransaction entityTransaction = null;
+		
+		try(var em = emSupplier.get()) {
+			
+			entityTransaction = em.getTransaction();
+			entityTransaction.begin();
+			
+			
+			entityTransaction.commit();
+			return null;
+		} catch (Throwable e) {
+			
+			if(null != entityTransaction) {
+				entityTransaction.rollback();
+			}
+			
+			return null;
+		}
 	}
 
 	@Override
