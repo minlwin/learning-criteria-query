@@ -6,9 +6,20 @@ import java.time.LocalDateTime;
 import com.jdc.onestop.criteria.entity.Appointment;
 import com.jdc.onestop.criteria.enums.Gender;
 
-public record AppointmentDetailsInfo(int doctorId, String doctorName, String doctorDegree, int patientId,
-		String patientName, String patientPhone, String patientEmail, Gender patientGender, LocalDate patientDob,
-		LocalDate appointmentDate, String startTime, LocalDateTime registAt, int seqNumber) {
+public record AppointmentDetailsInfo(
+		int doctorId, 
+		String doctorName, 
+		String doctorDegree, 
+		int patientId,
+		String patientName, 
+		String patientPhone, 
+		String patientEmail, 
+		Gender patientGender, 
+		LocalDate patientDob,
+		LocalDate appointmentDate, 
+		String startTime, 
+		LocalDateTime registAt, 
+		int seqNumber) {
 
 	public static class Builder {
 
