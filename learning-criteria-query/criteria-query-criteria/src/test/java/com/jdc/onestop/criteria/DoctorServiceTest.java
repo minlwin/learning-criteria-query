@@ -22,11 +22,11 @@ public class DoctorServiceTest {
 	
 	@ParameterizedTest
 	@CsvSource({
-		",,,,3",
-		"icu,,,,2",
+		",,,,4",
+		"icu,,,,3",
 		",Aung,,,1",
 		",,MBBS,,1",
-		",,,MONDAY,1",
+		",,,MONDAY,3",
 		"icu,Aung,MBBS,MONDAY,1",
 		
 	})
