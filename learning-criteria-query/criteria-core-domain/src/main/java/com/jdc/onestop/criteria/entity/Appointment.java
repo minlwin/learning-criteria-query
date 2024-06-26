@@ -35,10 +35,12 @@ public class Appointment {
 	
 	@Column(name = "regist_at")
 	private LocalDateTime registAt;
+	
 	@Column(name = "canceld_at")
 	private LocalDateTime canceldAt;
 	
 	private String reason;
+	
 	@Column(name = "cancel_reason")
 	private String cancelReason;
 	

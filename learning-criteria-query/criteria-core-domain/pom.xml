@@ -7,5 +7,15 @@
 		<artifactId>learning-criteria-query</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>criteria-core-domain</artifactId>	
+	<artifactId>criteria-core-domain</artifactId>
+
+	<dependencies>
+		<!--
+		https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-jpamodelgen -->
+		<dependency>
+			<groupId>org.hibernate.orm</groupId>
+			<artifactId>hibernate-jpamodelgen</artifactId>
+			<version>6.5.2.Final</version>
+		</dependency>
+	</dependencies>
 </project>

@@ -12,14 +12,18 @@ insert into department(code, name, phone, email, extra_phone) values ('NUO', 'Ne
 insert into account(login_id, password, role, activated) values ('aung@hospital.com', 'aungaung', 0, true);
 insert into account(login_id, password, role, activated) values ('thidar@hospital.com', 'thidar', 0, true);
 insert into account(login_id, password, role, activated) values ('nilar@hospital.com', 'nilar', 0, true);
+insert into account(login_id, password, role, activated) values ('ohnmar@hospital.com', 'ohnmar', 0, true);
 
 insert into doctor (account_login_id, email, name, phone, gender, degree, id) values ('aung@hospital.com', 'aung@hospital.com', 'Aung Aung', '0933334444', 0, 'MBBS', 1);
 insert into doctor (account_login_id, email, name, phone, gender, degree, id) values ('thidar@hospital.com', 'thidar@hospital.com', 'Thidar', '0933335555', 1, 'MED', 2);
 insert into doctor (account_login_id, email, name, phone, gender, degree, id) values ('nilar@hospital.com', 'nilar@hospital.com', 'Nilar Aung', '0933336666', 1, 'PHD', 3);
+insert into doctor (account_login_id, email, name, phone, gender, degree, id) values ('ohnmar@hospital.com', 'ohnmar@hospital.com', 'Ohnmar Lwin', '0933337777', 1, 'MED', 4);
 
 insert into doctor_department values (1, 'ICU');
 insert into doctor_department values (2, 'ICU');
 insert into doctor_department values (3, 'GSG');
+insert into doctor_department values (4, 'GSG');
+insert into doctor_department values (4, 'ICU');
 
 insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (1, 0, '9:00', '12:00', 50);
 insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (1, 0, '16:00', '20:00', 50);
@@ -29,9 +33,21 @@ insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_pa
 insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (2, 2, '16:00', '20:00', 50);
 insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (2, 3, '9:00', '12:00', 50);
 insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (2, 3, '16:00', '20:00', 50);
-insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 4, '16:00', '20:00', 50);
-insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 5, '16:00', '20:00', 50);
-insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 6, '16:00', '20:00', 50);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 0, '16:00', '20:00', 1);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 1, '16:00', '20:00', 1);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 2, '16:00', '20:00', 1);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 3, '16:00', '20:00', 1);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 4, '16:00', '20:00', 1);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 5, '16:00', '20:00', 1);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (3, 6, '16:00', '20:00', 1);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (4, 0, '16:00', '20:00', 50);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (4, 1, '16:00', '20:00', 50);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (4, 2, '16:00', '20:00', 50);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (4, 3, '16:00', '20:00', 50);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (4, 4, '16:00', '20:00', 50);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (4, 5, '16:00', '20:00', 50);
+insert into doctor_schedule(doctor_id, day_of_week, start_time, end_time, max_patient) values (4, 6, '16:00', '20:00', 50);
+
 
 insert into account(login_id, password, role, activated) values ('kkzin@gmail.com', 'kkzin@gmail.com', 1, true);
 insert into account(login_id, password, role, activated) values ('theint@gmail.com', 'theint@gmail.com', 1, true);

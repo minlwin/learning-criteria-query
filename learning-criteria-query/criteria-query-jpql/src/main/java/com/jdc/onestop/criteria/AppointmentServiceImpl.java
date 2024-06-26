@@ -3,9 +3,9 @@ package com.jdc.onestop.criteria;
 import java.util.List;
 import java.util.function.Supplier;
 
-import com.jdc.onestop.criteria.input.AppointmentDetailsInfo;
 import com.jdc.onestop.criteria.input.AppointmentEditForm;
 import com.jdc.onestop.criteria.input.AppointmentSearch;
+import com.jdc.onestop.criteria.output.AppointmentDetailsInfo;
 import com.jdc.onestop.criteria.output.AppointmentListItem;
 
 import jakarta.persistence.EntityManager;
